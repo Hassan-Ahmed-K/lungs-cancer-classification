@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/style.css" />
+    <title>LUNG CANCER</title>
+  </head>
+  <body>
+    <script src="../static/script.js"></script>
+    <h1 id="h1test"></h1>
+    <section>
+      <div class="positive-answer" id="positive-popup">
+        <div class="close-p" onclick="onPositivePopupClose()">x</div>
+        <div class="pa-wrap">
+          <div class="image">
+            <img src="../static/assets/sad (1) 1.png" alt="" />
+          </div>
+          <div class="result-text">
+            <p>Aahhh!! Our system has identified potential signs of cancer</p>
+          </div>
+        </div>
+      </div>
+      <div class="negative-answer" id="negative-popup">
+        <div class="close-n" onclick="onNegativePopupClose()">x</div>
+        <div class="na-wrap">
+          <div class="image">
+            <img src="../static/assets/smiley (1) 1.png" alt="" />
+          </div>
+          <div class="result-text">
+            <p>Woohoo!! No signs of cancer detected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="../static/assets/logo.png" alt="" />
+        </div>
+        <nav>
+          <a href="#about-us" class="nav-item">About Us</a>
+          <a href="#lung-cancer" class="nav-item">Lung Cancer</a>
+        </nav>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner-container">
+        <div class="banner-left-col">
+          <div class="banner-heading">
+            <h1>
+              Empowering Health: Your AI-Powered Cancer Detection Solution
+            </h1>
+          </div>
+          <div class="banner-text">
+            <p>
+              "Discover the future of cancer detection with CancerVision AI. Our
+              advanced algorithms analyze images with unparalleled accuracy,
+              revolutionizing early diagnosis and treatment.
+            </p>
+          </div>
+          <div class="banner-button-container">
+            <a class="btn btn-bbg" href="#lung-cancer-form"
+              >Detact Lung Cancer</a
+            >
+          </div>
+        </div>
+        <div class="banner-right-col">
+          <img src="../static/assets/banner-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="about-us" id="about-us">
+      <div class="aboutus-container">
+        <div class="aboutus-left-col">
+          <img src="../static/assets/about-us.png" alt="" />
+        </div>
+        <div class="aboutus-right-col">
+          <div class="aboutus-heading">
+            <h2>About us</h2>
+          </div>
+          <div class="aboutus-text">
+            <p>
+              We are driven by a singular mission: to revolutionize cancer
+              detection through the power of artificial intelligence. Founded by
+              a team of passionate researchers and healthcare professionals, our
+              journey began with a vision to make early detection accessible and
+              reliable for everyone. <br /><br />
+              With our cutting-edge AI algorithms, we're dedicated to empowering
+              individuals and healthcare providers with the tools they need to
+              detect lung and skin cancers at the earliest stages. Join us as we
+              continue to innovate, collaborate, and make a meaningful impact on
+              global healthcare.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="lung-cancer">
+      <img src="../static/assets/gradient-right.png" alt="" class="rgradient" />
+      <img src="../static/assets/gradient-left.png" alt="" class="lgradient" />
+
+      <div class="lungcancer-container" id="lung-cancer">
+        <div class="lung-cancer-top">
+          <div class="lc-left-col">
+            <div class="lc-heading">
+              <h2>Lung Cancer</h2>
+            </div>
+            <div class="lc-text">
+              <p>
+                Lung cancer is one of the most prevalent and deadly forms of
+                cancer worldwide, claiming millions of lives each year.
+                Understanding the risk factors, symptoms, and statistics
+                associated with this disease is essential for early detection
+                and improved outcomes.
+              </p>
+            </div>
+          </div>
+          <div class="lc-right-col">
+            <img src="../static/assets/lung-cancer.png" alt="" />
+          </div>
+        </div>
+        <div class="lung-cancer-bottom">
+          <div class="cards-container">
+            <div class="card1 card-wrap">
+              <div class="card">
+                <h4>Risk Factors:</h4>
+                <p>
+                  While anyone can develop lung cancer, certain factors increase
+                  the risk, including smoking, exposure to secondhand smoke,
+                  radon exposure, occupational exposure to carcinogens such as
+                  asbestos and diesel exhaust, and a family history of lung
+                  cancer.
+                </p>
+              </div>
+            </div>
+            <div class="card2 card-wrap">
+              <div class="card">
+                <h4>Symptoms:</h4>
+                <p>
+                  Early-stage lung cancer often presents no symptoms, making it
+                  challenging to detect. However, as the disease progresses,
+                  symptoms may include persistent cough, coughing up blood,
+                  shortness of breath, chest pain, hoarseness, unexplained
+                  weight loss, and fatigue.
+                </p>
+              </div>
+            </div>
+            <div class="card3 card-wrap">
+              <div class="card">
+                <h4>Statistics:</h4>
+                <p>
+                  Lung cancer accounts for the highest number of cancer-related
+                  deaths globally. According to the World Health Organization
+                  (WHO), approximately 2.21 million new cases of lung cancer
+                  were diagnosed in 2020 alone, with 1.8 million deaths
+                  reported.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lung-cancer-form" id="lung-cancer-form">
+          <p class="form-text">
+            Early detection is paramount in the fight against lung cancer, as it
+            significantly improves treatment outcomes and survival rates.
+            Unfortunately, lung cancer is often diagnosed at an advanced stage
+            when treatment options are limited. That's where our AI technology
+            comes in.By analyzing medical imaging with unparalleled accuracy and
+            efficiency, our product can detect subtle signs of lung cancer at
+            its earliest stages, long before symptoms may appear.
+          </p>
+          <form action="" method="post" enctype="multipart/form-data">
+            <input
+              placeholder="Name"
+              type="text"
+              id="name-lung"
+              name="name"
+              required
+            /><br /><br />
+
+            <input
+              placeholder="Email"
+              type="email"
+              id="email-lung"
+              name="email"
+              required
+            /><br /><br />
+
+            <div class="file-input">
+              <input
+                type="file"
+                id="file-lung"
+                name="file"
+                required
+              /><br /><br />
+            </div>
+
+            <div class="form-submit" onclick="onLungCancerDetection()">
+              <div type="" value="Upload File" class="form-button">
+                <div class="form-button-name" id="form-button-name">
+                  Upload File
+                </div>
+                <div class="loader" id="loader"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>Copyrighted © CancerVision AI 2024-2030. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,5 +1,22 @@
-# lungs-cancer-classification
-Ai/Machine Learning model for lung cancer Classification. 
-Here is the Colab Link
+How to contribute:
+1. Clone this repository
+2. create python virtual enviroment
+3. paste app folder along with .gitignore
+4. install dependencies
+5. contribute and submit for review
 
-https://colab.research.google.com/drive/1eXsrNPJ5w0-InEpr2z4LW38bKS_Mj8Uv#scrollTo=422032f0
+Links:
+
+GitHub: https://github.com/Hassan-Ahmed-K/lungs-cancer-classification.git
+
+Google Colab : https://colab.research.google.com/drive/1XqlD6icCpZFu6dv7WhJfJcEQNTHYas4u?usp=sharing
+
+Figma Design : https://www.figma.com/design/kr5LfLxc2N07lWbk6FHsVA/Hassan-Project?node-id=0-1
+
+
+
+
+
+
+
+

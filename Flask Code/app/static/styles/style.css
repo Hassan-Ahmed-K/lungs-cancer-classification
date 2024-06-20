@@ -1,0 +1,612 @@
+:root {
+  --pink: #f28080;
+  --blue: #9bcaf2;
+  --black: #0b1215;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Couture Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Couture Bold"), url("couture-bld.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Couture Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Couture Bold Italic"), url("couture-bldit.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  padding: 20px 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+header .header-container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+header .header-container nav {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+header .header-container nav .nav-item {
+  text-decoration: none;
+  color: var(--black);
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.banner {
+  min-height: 80vh;
+  padding: 20px 0;
+}
+
+.banner .banner-container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .banner-container .banner-left-col {
+  width: 50%;
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner .banner-container .banner-left-col .banner-heading {
+  margin-bottom: 100px;
+}
+
+.banner .banner-container .banner-left-col .banner-heading h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  font-family: "Lato", sans-serif;
+}
+
+.banner .banner-container .banner-left-col .banner-text {
+  margin-bottom: 135px;
+}
+
+.banner .banner-container .banner-left-col .banner-text p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.banner .banner-container .banner-left-col .banner-button-container {
+  display: flex;
+  column-gap: 30px;
+}
+.banner .banner-container .banner-left-col .banner-button-container .btn {
+  padding: 20px;
+  border: 1px solid var(--black);
+  border-radius: 32px;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.banner .banner-container .banner-left-col .banner-button-container .btn-bbg {
+  background-color: var(--blue);
+}
+
+.banner
+  .banner-container
+  .banner-left-col
+  .banner-button-container
+  .btn-bbg:hover {
+  background-color: rgba(155, 202, 242, 0.4);
+}
+.banner
+  .banner-container
+  .banner-left-col
+  .banner-button-container
+  .btn-pbg:hover {
+  background-color: rgba(242, 128, 128, 0.4);
+}
+.banner .banner-container .banner-left-col .banner-button-container .btn-pbg {
+  background-color: var(--pink);
+}
+
+.banner .banner-container .banner-right-col {
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  padding: 100px 0;
+}
+
+.about-us .aboutus-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us .aboutus-container .aboutus-left-col {
+  width: 45%;
+}
+
+.about-us .aboutus-container .aboutus-left-col img {
+  width: 100%;
+}
+
+.about-us .aboutus-container .aboutus-right-col {
+  width: 50%;
+}
+
+.about-us .aboutus-container .aboutus-right-col .aboutus-heading {
+  margin-bottom: 70px;
+}
+
+.about-us .aboutus-container .aboutus-right-col .aboutus-heading h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: left;
+}
+
+/* .about-us .aboutus-container .aboutus-right-col .aboutus-text{
+
+} */
+
+.about-us .aboutus-container .aboutus-right-col .aboutus-text p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.lung-cancer {
+  position: relative;
+  padding: 100px 0;
+  background-color: var(--blue);
+}
+
+.lung-cancer .rgradient {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.lung-cancer .lgradient {
+  position: absolute;
+  left: 0;
+  top: 5%0;
+}
+
+.lung-cancer .lungcancer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top .lc-left-col {
+  width: 43%;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top .lc-left-col .lc-heading {
+  margin-bottom: 50px;
+}
+
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-top
+  .lc-left-col
+  .lc-heading
+  h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: left;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top .lc-left-col .lc-text p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top .lc-right-col {
+  width: 43%;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-top .lc-right-col img {
+  width: 85%;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-bottom {
+  position: relative;
+  margin: 20px 0 100px;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-bottom img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-bottom .cards-container {
+  display: flex;
+  height: 750px;
+  column-gap: 60px;
+}
+
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-bottom
+  .cards-container
+  > div
+  .card {
+  height: max-content;
+  padding: 50px 40px;
+  background: #fff;
+  border-radius: 32px;
+}
+
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-bottom
+  .cards-container
+  .card-wrap {
+  height: 100%;
+  display: flex;
+}
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-bottom
+  .cards-container
+  .card-wrap
+  .card
+  h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin-bottom: 25px;
+}
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-bottom
+  .cards-container
+  .card-wrap
+  .card
+  p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.lung-cancer .lungcancer-container .lung-cancer-bottom .cards-container .card1 {
+  align-items: flex-start;
+}
+.lung-cancer .lungcancer-container .lung-cancer-bottom .cards-container .card2 {
+  align-items: center;
+}
+.lung-cancer .lungcancer-container .lung-cancer-bottom .cards-container .card3 {
+  align-items: flex-end;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 99;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form .form-text {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 50px 70px;
+  border-radius: 32px;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form input {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form .file-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--black);
+  padding: 80px 0;
+  border-radius: 32px;
+}
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-form
+  form
+  .file-input
+  #file-lung {
+  width: max-content;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form input:focus-visible {
+  outline: none;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form .form-submit {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form .form-button {
+  background-color: var(--pink);
+  padding: 20px 50px;
+  border: 1px solid var(--black);
+  border-radius: 32px;
+  width: 25%;
+  cursor: pointer;
+  transition: "opacity" 0.15s;
+  align-items: center;
+}
+
+.lung-cancer
+  .lungcancer-container
+  .lung-cancer-form
+  form
+  .form-button
+  .form-button-name {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  position: relative;
+  top: 8%;
+  left: 9%;
+}
+
+.active-form-button {
+  opacity: 0;
+  visibility: hidden;
+  font-size: 0px;
+  height: 0px;
+  width: 0px;
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form .form-button:hover {
+  background-color: rgba(242, 128, 128, 0.4);
+}
+
+.lung-cancer .lungcancer-container .lung-cancer-form form .form-button:active {
+  background-color: var(--blue);
+}
+
+footer .footer-container {
+  max-width: 1440px;
+  padding: 30px 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+footer .footer-container p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.79px;
+}
+
+.positive-answer {
+  height: 320px;
+  width: 550px;
+  position: fixed;
+  background: var(--blue);
+  border-radius: 32px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s top 0.4s;
+  visibility: hidden;
+  z-index: 200;
+}
+.positive-answer-open {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.positive-answer .close-p {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.positive-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.positive-answer .pa-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.positive-answer .pa-wrap .result-text p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+.negative-answer {
+  height: 320px;
+  width: 550px;
+  position: fixed;
+  background: var(--pink);
+  border-radius: 32px;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s top 0.4s;
+  visibility: hidden;
+  z-index: 200;
+}
+
+.negative-answer-open {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+}
+
+.negative-answer .close-n {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.negative-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.negative-answer .na-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.negative-answer .na-wrap .result-text p {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+  text-align: center;
+}
+
+.loader {
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid var(--blue); /* Blue */
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  animation: spin 2s linear infinite;
+  transition: "opacity" 15s;
+  visibility: hidden;
+  position: relative;
+  top: 8%;
+  left: 32%;
+}
+
+.active-loader {
+  opacity: 100%;
+  visibility: visible;
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
